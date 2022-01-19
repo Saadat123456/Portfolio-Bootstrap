@@ -94,7 +94,25 @@
                             <li class="list-inline-item badge badge-secondary">Javascript</li>
                             <li class="list-inline-item badge badge-secondary">html</li>
                         </ul>
-                        <button class="btn btn-success">See Project</button>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#projectDetail">See Project</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-4 p-3">
+                <div class="card">
+                    <img src="https://picsum.photos/200/200" alt="">
+                    <div class="card-header">
+                        <h3>Multi-Post Stories Gain+Glory t</h3>
+                    </div>
+                    <div class="card-body justify-content-center text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item badge badge-secondary">Ruby on rails</li>
+                            <li class="list-inline-item badge badge-secondary">css</li>
+                            <li class="list-inline-item badge badge-secondary">Javascript</li>
+                            <li class="list-inline-item badge badge-secondary">html</li>
+                        </ul>
+                        <button class="btn btn-success" data-toggle="modal" data-target="#projectDetail">See Project</button>
                     </div>
 
                 </div>
@@ -112,7 +130,7 @@
                             <li class="list-inline-item badge badge-secondary">Javascript</li>
                             <li class="list-inline-item badge badge-secondary">html</li>
                         </ul>
-                        <button class="btn btn-success">See Project</button>
+                         <button class="btn btn-success" data-toggle="modal" data-target="#projectDetail">See Project</button>
                     </div>
 
                 </div>
@@ -130,7 +148,7 @@
                             <li class="list-inline-item badge badge-secondary">Javascript</li>
                             <li class="list-inline-item badge badge-secondary">html</li>
                         </ul>
-                        <button class="btn btn-success">See Project</button>
+                         <button class="btn btn-success" data-toggle="modal" data-target="#projectDetail">See Project</button>
                     </div>
 
                 </div>
@@ -148,7 +166,7 @@
                             <li class="list-inline-item badge badge-secondary">Javascript</li>
                             <li class="list-inline-item badge badge-secondary">html</li>
                         </ul>
-                        <button class="btn btn-success">See Project</button>
+                         <button class="btn btn-success" data-toggle="modal" data-target="#projectDetail">See Project</button>
                     </div>
 
                 </div>
@@ -166,25 +184,7 @@
                             <li class="list-inline-item badge badge-secondary">Javascript</li>
                             <li class="list-inline-item badge badge-secondary">html</li>
                         </ul>
-                        <button class="btn btn-success">See Project</button>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-4 p-3">
-                <div class="card">
-                    <img src="https://picsum.photos/200/200" alt="">
-                    <div class="card-header">
-                        <h3>Multi-Post Stories Gain+Glory</h3>
-                    </div>
-                    <div class="card-body justify-content-center text-center">
-                        <ul class="list-inline">
-                            <li class="list-inline-item badge badge-secondary">Ruby on rails</li>
-                            <li class="list-inline-item badge badge-secondary">css</li>
-                            <li class="list-inline-item badge badge-secondary">Javascript</li>
-                            <li class="list-inline-item badge badge-secondary">html</li>
-                        </ul>
-                        <button class="btn btn-success">See Project</button>
+                         <button class="btn btn-success" data-toggle="modal" data-target="#projectDetail">See Project</button>
                     </div>
 
                 </div>
@@ -271,8 +271,29 @@
     </section>
 
     <section class="footer container">
-        <div class="row"></div>
-        <div class="row">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-4">
+            <h3 class="font-weight-bold text-center">
+              I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h3>
+          </div>
+          <div class="col-8">
+            <form action="https://formspree.io/f/xqknezwl " method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" id="Full_name" required aria-describedby="Full_name" placeholder="Full Name" maxlength="30">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" required placeholder="Saadat@gmail.com">
+              </div>
+              <div class="form-group">
+               <textarea class="form-control" id="msg" required placeholder="Enter your message" maxlength="500">
+               </textarea>
+              </div>
+              <button type="submit" class="btn btn-success">Get in touch</button>
+            </form>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="">
                         <img src="images/twitter.svg" alt="">
@@ -297,7 +318,28 @@
             </ul>
         </div>
     </section>
-
+    <div class="modal" id="projectDetail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Project Detail</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-center">
+              <img src="https://picsum.photos/200/200" alt=" project image" class="img-responsive w-75" >
+            </div>
+            <h4>Multi-Post Stories Gain+Glory</h4>
+            <p>
+              this is project detail section
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->0
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
